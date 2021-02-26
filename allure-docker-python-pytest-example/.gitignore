@@ -3,3 +3,4 @@
 .pytest_cache
 /tests/__pycache__
 !.gitkeep
+/venv
