@@ -40,3 +40,11 @@ services:
     ports:
       - "4444:4444"
     network_mode: bridge
+  selenoid-ui:
+    image: "aerokube/selenoid-ui"
+    network_mode: bridge
+    links:
+      - selenoid
+    ports:
+      - "8080:8080"
+    command: ["--selenoid-uri", "http://selenoid:4444"]
