@@ -12,7 +12,6 @@ capabilities = options.to_capabilities()
         
 capabilities1 = {
     "browserName": "chrome",
-    "browserVersion": version,
     "selenoid:options": {
         # "enableVNC": True,
         "enableVideo": True
