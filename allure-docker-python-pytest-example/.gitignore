@@ -4,3 +4,4 @@
 /tests/__pycache__
 !.gitkeep
 /venv
+/.idea
