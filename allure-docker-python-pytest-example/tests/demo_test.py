@@ -3,15 +3,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import allure
 from selenium import webdriver
-
-options = webdriver.ChromeOptions()
-
-
-capabilities = options.to_capabilities()
-
         
-capabilities1 = {
+capabilities = {
     "browserName": "chrome",
+    "browserVersion": "64.0",
     "selenoid:options": {
         # "enableVNC": True,
         "enableVideo": True
@@ -20,7 +15,7 @@ capabilities1 = {
 
 driver = webdriver.Remote(
     command_executor="http://45.15.25.151:4444/wd/hub",
-    desired_capabilities=capabilities1)
+    desired_capabilities=capabilities)
 
 # Welcome to Rocket Software
 @allure.severity(allure.severity_level.NORMAL)
