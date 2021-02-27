@@ -6,7 +6,9 @@ from selenium import webdriver
         
 capabilities = {
     "browserName": "chrome",
-    "browserVersion": "latest",
+    "browserVersion": "66.0",
+    "platform": "ANY",
+    "gpu": "false",
     "selenoid:options": {
         # "enableVNC": True,
         "enableVideo": True
